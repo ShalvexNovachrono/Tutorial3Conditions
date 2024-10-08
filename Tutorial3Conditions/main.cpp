@@ -58,7 +58,7 @@ int main() {
 	cout << "3.c" << endl;
 	string name;
 	cout << "Enter your name: ";
-	getline(cin, name);
+	cin >> name;
 	if (name == "bob") {
 		cout << 1 << endl;
 	}
@@ -74,7 +74,7 @@ int main() {
 	// It checks if alphabet is Decimal is more than the other 
 
 	// 3.e
-	int playerAmmo;
+	int playerAmmo = 0;
 	const int MAX_AMMO = 10;
 	bool isPlayerOutOfAmmo = (playerAmmo < 0) ? true : false;
 	cout << "isPlayerOutOfAmmo: " << isPlayerOutOfAmmo << endl;
@@ -86,6 +86,23 @@ int main() {
 	cout << (Percentage >= 0) << endl;
 	cout << (Percentage <= 100) << endl;
 
+	//
+	cout << (5 < 10) && !(5 > 10); // true
+	//
+	int num;
+	cout << "Enter a number: ";
+	cin >> num;
+	cout << (num >= 70 & num <= 100) ? "1" : "0";
+	//
+	name;
+	cout << "Enter your name: ";
+	getline(cin, name);
+	if (name != "bob") {
+		cout << 1 << endl;
+	}
+	else {
+		cout << 0 << endl;
+	}
 
 
 	// Global vs Locals 
